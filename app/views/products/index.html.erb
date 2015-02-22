@@ -1,0 +1,36 @@
+
+  	<h1 class="text-center v-center">Witty Knitty</h1> 
+  	<% if current_user %>
+  		<h2>Hi there, <%= current_user.email %>! We haven't seen you in a long time!</h2>
+  	<% end %>
+        <div class="row">
+         	<% @products.each do |product| %>
+				<div class= "col-md-3 col-sm-3">
+				<a href="/products/<%= product.id %>"><h3><%= product.title %> </h3> </a>
+				<h4><%= product.description %></h4>
+				<img src="<%= product.image %>" width="100">
+				<h4><%= product.price %></h4>
+				</div>
+			<% end %>
+	    </div>	
+	                
+
+
+
+
+
+
+
+
+
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
+		
+	</div>
+
+
+</div>

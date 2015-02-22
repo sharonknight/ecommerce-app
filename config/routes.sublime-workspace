@@ -1,0 +1,251 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/app/views/layouts/application.html.erb",
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/app/controllers/webinars_controller.rb",
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/app/views/webinars/index.html.erb",
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/config/routes.rb",
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/app/assets/stylesheets/style.scss",
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/Gemfile",
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/app/assets/stylesheets/application.css.sass",
+		"/Users/sharonknight/golden-playground/Collaboration-Cafe/app/assets/javascripts/application.js",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/assets/stylesheets/style.scss",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/assets/stylesheets/application.css",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/assets/stylesheets/_external.scss",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/layouts/application.html.erb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/products/index.html.erb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/controllers/products_controller.rb",
+		"/Users/sharonknight/rails_playground/real-estate-app/db/migrate/20150217010320_change_houses.rb",
+		"/Users/sharonknight/rails_playground/real-estate-app/db/migrate/20150217005910_create_houses.rb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/config/database.yml",
+		"/Users/sharonknight/rails_playground/ecommerce-app/config/routes.rb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/products/show.html.erb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/products/edit.html.erb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/Gemfile",
+		"/Users/sharonknight/rails_playground/ecommerce-app/db/migrate/20150211154220_create_products.rb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/products/create.html.erb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/controllers/application_controller.rb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/products/destroy.html.erb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/assets/stylesheets/products.scss",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/products/new.html.erb",
+		"/Users/sharonknight/Downloads/vGYOO8lr6r/index.html",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/views/products/update.html.erb",
+		"/Users/sharonknight/rails_playground/ecommerce-app/app/assets/javascripts/application.js",
+		"/Users/sharonknight/Documents/MasteryManager/MM/templates/root.tt",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/static/styles/root.css",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/static/partials/root/careers.html",
+		"/Users/sharonknight/Documents/MasteryManager/MM/templates/help.tt",
+		"/Users/sharonknight/Documents/MasteryManager/MM/templates/css/root.css",
+		"/Users/sharonknight/Documents/MasteryManager/MM/templates/root.css",
+		"/Users/sharonknight/Desktop/help.html",
+		"/Users/sharonknight/Documents/Help Guide/index.html",
+		"/Users/sharonknight/Desktop/passage.html",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/static/styles/bootstrap/mm-theme.css",
+		"/Users/sharonknight/Documents/Help Guide/css/root.css",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/static/partials/root/home.html",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/static/partials/root/contact-us.html",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/static/partials/root/support.html",
+		"/Users/sharonknight/Documents/Javascript/strings.js",
+		"/Users/sharonknight/Documents/Javascript/apples.js",
+		"/Users/sharonknight/Documents/md5sum.pl",
+		"/Users/sharonknight/Documents/login.pm",
+		"/Users/sharonknight/Documents/passwords.pl",
+		"/Users/sharonknight/Documents/login2.pl",
+		"/Users/sharonknight/Documents/login.pl",
+		"/Users/sharonknight/Documents/Mastery Manager Careers Page/index.html",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/bootstrap-theme/example.html",
+		"/Users/sharonknight/Documents/MasteryManager/MM/root/bootstrap-theme/mm-theme.scss",
+		"/Users/sharonknight/Documents/MasteryManager/MM/lib/MM/Controller/Gradingscales.pm",
+		"/Users/sharonknight/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/untitled",
+		"/Users/sharonknight/Documents/MasteryManager/MM/lib/Catalyst/sftp-config.json",
+		"/Users/sharonknight/Documents/MasteryManager/sftp-config.json",
+		"/Users/sharonknight/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/sharonknight/Documents/Mastery Manager Careers Page/css/my-styles.css",
+		"/Users/sharonknight/Documents/Mastery Manager Careers Page/css/bootstrap.min.css",
+		"/Users/sharonknight/Documents/Mastery Manager Careers Page/css/bootstrap.css",
+		"/Users/sharonknight/Documents/Treehouse_Project/index.html",
+		"/Users/sharonknight/Downloads/3-2 2/final/css/bootstrap.min.css",
+		"/Users/sharonknight/Downloads/3-2 2/final/css/my-styles.css",
+		"/Users/sharonknight/Downloads/3-2 2/final/index.html",
+		"/Users/sharonknight/Downloads/index.html",
+		"/Users/sharonknight/Documents/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"section7",
+			"%>\n",
+			"v=",
+			"text-indent: 0.25in",
+			".carousel-caption ",
+			"top"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"text-indent: 0in"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 100.0
+	},
+	"project": "routes.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

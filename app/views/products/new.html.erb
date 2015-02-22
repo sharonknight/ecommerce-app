@@ -1,0 +1,21 @@
+	<div class="header">
+		<h1> Create New Webinar</h1>
+	</div>
+
+		<%= form_tag '/products' do %>
+
+		  <%= label_tag :title %>
+		  <%= text_field_tag :title %>
+
+		   <%= label_tag :price %>
+		  <%= text_field_tag :price %>
+
+
+		  <%= label_tag :description %>
+		  <%= text_field_tag :description %>
+
+		  <%= submit_tag "Submit" %>
+
+		<% end %>
+
+

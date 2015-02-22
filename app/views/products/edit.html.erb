@@ -1,0 +1,26 @@
+<div class = "headers">
+  <h1> Edit your request</h1>
+</div>
+  <%= form_tag("/products/#{@product.id}", :method => :patch) do %>
+
+    <div id="form id">
+      <div class="inner_div">
+        <%= label_tag :title %>
+        <%= text_field_tag :title, @product.title %>
+      </div>
+
+      <div class="inner_div">
+        <%= label_tag :description %>
+        <%= text_field_tag :description, @product.description %>
+      </div>
+
+      <div class="inner_div">
+        <%= label_tag :price %>
+        <%= text_field_tag :price %>
+      </div>
+
+       
+       <div> 
+        <%= submit_tag "Update Product", :class => "update_request_button" %>
+      </div>
+      <% end %>
