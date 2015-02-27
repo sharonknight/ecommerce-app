@@ -1,0 +1,14 @@
+  	<h1 class="text-center v-center">Your order</h1> 
+  	<% if current_user %>
+  		<h2>Hi there, <%= current_user.email %>! We haven't seen you in a long time!</h2>
+  	<% end %>
+        <div class="row">
+         	<% @carted_products.each do |carted_product| %>
+				<div class= "col-md-3 col-sm-3">
+				<h4><%= product_id.name %></h4>
+				<a href="/carted_products/<%= product_id.quantity %>"><h3><%= product_id.quantity %> </h3> </a>
+				
+				
+				</div>
+			<% end %>
+	    </div>	

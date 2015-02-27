@@ -1,67 +1,57 @@
-class ProductsController <
-	ApplicationController
-
-	def index
-		@products = Product.all
-    if params[:sort] == "discounted"
-      @products = Product.where("price <?", 2)
-    elsif params[:sort]== "rand"
-      @products = [Product.all.sample]
-    elsif params[:sort]=="Descending"
-      @products = Product.order(:price =>:desc)
-    elsif params[:sort]=="Ascending"
-      @products = Product.order(:price =>:asc)
-    elsif params[:sort]=="Category"
-      @products = Product.order(:category =>:desc)
-	 end
-     if params[:search]
+class ProductsController < ApplicationController
+  before_action :authenticate_admin!, :only => [:edit, :destroy]
+  def index
+    #/products?search=chair
+    @products = Product.all
+    if params[:filter] == "discount"
+      @products = @products.where("price <= ?", 5)
+    end
+    if params[:sort]
+      @products = @products.order(params[:sort] => params[:direction])
+    end
+    if params[:category]
+      category = Category.find_by(:name => params[:category])
+      @products = category.products
+      # @products = Category.find_by(:name => params[:category]).products
+    end
+    if params[:search]
       @products = @products.where('title LIKE ?', "%" + params[:search] + "%")
-     end
-  end
-
-
-	def show
-     if params[:id] == "random"
-      @product = Product.all.sample
-    else @product = Product.find(params[:id])
-  	end
-  end
-
-  	def new
-  		@product = Product.new
-  	end
-
-  	def create
-      Product.create({:title => params[:title], :price => params[:price], :description => params[:description], :user_id => current_user.id })
-      flash[:success] = "Product added."
-      redirect_to "/products/#{product.id}"
-
     end
-  
+  end
 
-  	def edit
-    @product = Product.find(params[:id])
+  def show
+    @product_ids = Product.all.pluck(:id)
+    if params[:id] == "random"
+      @product = Product.find(@product_ids.sample)
+    else
+      @product = Product.find(params[:id])
+    end
+  end
 
-  	end
+  def new
+    @product = Product.new #JUST A PLACEHOLDER!
+  end
 
-  	def update
-  		@product = Product.find(params[:id])
-  		@product.update({:title => params[:title], :price => params[:price], :description => params[:description]})
-      flash[:success] = "Product updated.."
+  def create
+    @product = Product.new(:title => params[:title], :price => params[:price], :description => params[:description], :image => params[:image])
+    if @product.save
+      flash[:message] = "Product created!"
       redirect_to "/products/#{@product.id}"
-  	end
-    
-
-  	def destroy
-  		@product = Product.find(params[:id])
-  		@product.destroy
-      flash[:success] = "Product destroyed."
-      redirect_to '/products'
-  	end
-
-    def orders
-
+    else
+      flash[:info] = "Something was wrong with your form"
+      render "new"
     end
+  end
 
+  def edit
+    @product = Product.find(params[:id])
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    flash[:warning] = "Product deleted!"
+    redirect_to '/'
+  end
 
 end

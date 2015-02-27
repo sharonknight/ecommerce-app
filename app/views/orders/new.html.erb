@@ -1,0 +1,15 @@
+	<div class="header">
+		<h1> Create a New Order</h1>
+	</div>
+
+		<%= form_tag '/orders' do %>
+
+		  <%= label_tag :status %>
+		  <%= text_field_tag :status %>
+
+		   <%= label_tag :user_id %>
+		  <%= text_field_tag :user_id %>
+
+		  <%= submit_tag "Submit" %>
+
+		<% end %>

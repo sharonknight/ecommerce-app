@@ -1,18 +1,13 @@
 class OrdersController < ApplicationController
-	def create
-		product = Product.find(params[:product_id])
-		quantity = params[:quantity].to_i
-		tax = product.price * quantity * 0.09
-		subtotal = product.price * quantity
-		total = subtotal + tax
-		order= Order.new({:quantity=> quantity, :user_id => current_user.id, :quantity => params[:quantity].to_i, 
-			:product_id => params[:product_id]})
+	def update
+    order = Order.find(params[:id])
+    # order = Order.find_by(:user_id => current_user.id, :status => "carted")
+    
+    # code for charging credit card goes here
 
-		order.subtotal = order.calculate_subtotal
-		order.tax = order.calculate_tax
-		order.total = order.calculate_total
-		order.save
-		flash[:success] = "Thanks for shopping!"
-		redirect_to "/products"
-	end
+    order.update(:status => "purchased")
+
+    flash[:success] = "Thanks for shopping!"
+    redirect_to "/products"
+  end
 end
