@@ -9,10 +9,10 @@ belongs_to :vendor
   has_many :carted_products
   has_many :orders, :through => :carted_products
 
-  validates :price, numericality: {greater_than: 0},
-	prescence: true
+ #  validates :price, numericality: {greater_than: 0},
+	# prescence: true
 
-  validates :title, prescence: true, uniqueness: true,
+ #  validates :title, prescence: true, uniqueness: true,
 
   def sale_message
     if price > 15
@@ -31,15 +31,7 @@ belongs_to :vendor
   end
  end
 
-  # def title
-  # end
 
-  # def category
-  # end
-
-  # def price
-  #   #pulls price from db
-  # end
 
 
 
